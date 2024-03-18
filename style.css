@@ -1,15 +1,21 @@
+/*Beginning of styling for browsers with display widths under 800px (progressive enhancement)*/
+
+/*Default Chegg Skill's styling*/
 main {
   margin-top: 60px;
 }
 
+/*Makes ".cofee-basics-div" div appropriate size inside of the header tag to replicate Chegg Skill's example web page*/
 .cofee-basics-div {
   flex: 1;
 }
 
+/*Makes ".header-coffee-pic-div" div appropriate size inside of the header tag to replicate Chegg Skill's example web page*/
 .header-coffee-pic-div {
   flex: 2;
 }
 
+/*Default Chegg Skill's styling*/
 main h1 {
   margin: 0 10px;
   text-align: center;
@@ -17,6 +23,7 @@ main h1 {
   font-size: 65px;
 }
 
+/*Default Chegg Skill's styling*/
 main h2 {
   margin: 18px 0 12px 0;
   border-bottom: 1px solid #5c4f41;
@@ -24,6 +31,7 @@ main h2 {
   font-size: 24px;
 }
 
+/*Default Chegg Skill's styling*/
 main h3 {
   margin: 18px 0 12px 0;
   border-bottom: 1px solid #5c4f41;
@@ -31,78 +39,97 @@ main h3 {
   font-size: 18px;
 }
 
+/*Default Chegg Skill's styling*/
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
 
+/*All widths of images are set to 100% to match the width of the containers they're placed within*/
 img {
   width: 100%;
 }
 
+/*Appropriate spacing (gap and margin) set for items inside of the header tag to replicate Chegg Skill's web page example*/
 header {
   gap: 15px;
   margin: 0 12% 0 12%;
 }
 
-.item {
+/*".end-section-div" divs padding set to replicate Chegg Skill's web page example*/
+.end-section-div {
   padding: 2.5% 0;
 }
 
-.bottom-item {
+/*No bottom padding on ".end-section-bottom-div" div to affect ".end-section" section tag's padding which helps replicate Chegg Skill's web page example*/
+.end-section-bottom-div {
   padding-bottom: 0;
 } 
 
-.top-item {
+/*No bottom padding on ".end-section-top-div" div to affect ".end-section" section tag's padding which helps replicate Chegg Skill's web page example*/
+.end-section-top-div {
   padding-top: 0;
 }
 
+/*".end-section" section tag with background-color and padding set to replicate Chegg Skill's web page example*/
 .end-section {
   background-color: rgb(60 44 1);
   /*margin: 25% 10%;*/
   padding: 1.5% 12%;
 }
 
+/*Appropriate spacing (gap and margin) on ".mid-section" section tag set to replicate Chegg Skill's web page example*/
 .mid-section {
   gap: 15px;
   margin: 30% 12%;
 }
 
+/*".end-section" section tag, ".mid-section" section tag and header tag set to "flex" and "column" to replicate Chegg Skill's web page example*/
 .end-section, .mid-section, header {
   flex-direction: column;
   display: flex;
 }
 
+/*Size set (flex: 1) to make all items in ".mid-section-div" divs equal in size inside of ".mid-section" section tag*/
 .mid-section-div {
   flex: 1;
 }
 
+/*End of styling for browsers with display widths under 800px (progressive enhancement)*/
 
 
+/*Beginning of styling for browsers with display widths over 800px (progressive enhancement)*/
+
+/*flex-direction set to "row" for header tag, ".mid-section" tag and ".end-section" tag*/
 @media all and (min-width: 800px) {
    header,.mid-section, .end-section {
     flex-direction: row;
   }
 
+  /*".mid-section" section tag margin set to replicate Chegg Skill's web page example*/
 .mid-section {
   /*padding: 100px 50px;*/
   margin: 12% 7%;
 }
 
+/*.end-section" section tag padding set to replicate Chegg Skill's web page example*/
 .end-section {
   /*padding: 10px 35px;*/
   padding: .8% 3%;
 }
 
-  .item {
+/*".end-section-div" divs padding set to replicate Chegg Skill's web page example*/
+  .end-section-div {
     /*margin: 0 10px;*/
     padding: 0 .87%;
   }
 
-
+/*Spacing set for items inside of the header tag (gap and margin) to replicate Chegg Skill's web page example*/
   header {
     gap: 15px;
     margin: 0 7% 0 7%;
   }
 
 }
+
+/*End of styling for browsers with display widths over 800px (progressive enhancement)*/
